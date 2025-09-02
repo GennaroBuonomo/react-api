@@ -2,19 +2,24 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 
 function App() {
+  const [actresses, setActresses] = useState([]);
 
-  const fetchactresses = () => {
+  const fetchActresses = () => {
     axios.get("https://lanciweb.github.io/demo/api/actresses/").then((resp) => {
-      
-    })
-  }
+      setActresses(resp.data.results);
+    });
+  };
+
+  useEffect(() => {
+   fetchActresses();
+  }, []);
 
   return (
     <>
     <div className="container">
       <div className="row justify-content-center">
         <div className="col-12 mb-5">
-          <h1 className="d-block mx-auto text-center"><strong>Actresses</strong></h1>
+          <h1 className="d-block mx-auto text-center"><strong>Attrici</strong></h1>
         </div>
         <div className="col-12">
           <div className="card">
