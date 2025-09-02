@@ -10,6 +10,10 @@ function App() {
         <div className="col-12">
           <div className="card text-white">
             <div className="card-header">Nome</div>
+            <img src="" alt="attrici" />
+            <div className="card-body text-center">
+              <p>1099 &nbsp; americano</p>
+            </div>
           </div>
         </div>
       </div>
