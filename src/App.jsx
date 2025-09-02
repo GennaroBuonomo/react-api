@@ -14,6 +14,10 @@ function App() {
             <div className="card-body text-center">
               <p>1099 &nbsp; americano</p>
               <p className="card-text">Meryl Streep is considered one of the greatest actresses of her generation and has received numerous accolades for her versatile performances.</p>
+              <p>
+                <span className="fw-bold text-danger">most_famous_movies</span><br />
+                <span className="text-danger">"The African Queen","Bringing Up Baby","On Golden Pond"</span>
+              </p>
             </div>
           </div>
         </div>
