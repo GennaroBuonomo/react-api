@@ -6,7 +6,7 @@ function App() {
 
   const fetchActresses = () => {
     axios.get("https://lanciweb.github.io/demo/api/actresses/").then((resp) => {
-      setActresses(resp.data.results);
+      setActresses(resp.data);
     });
   };
 
@@ -21,24 +21,38 @@ function App() {
         <div className="col-12 mb-5">
           <h1 className="d-block mx-auto text-center"><strong>Attrici</strong></h1>
         </div>
-        <div className="col-12">
+        {actresses.map((actress) => {
+           const {
+            id,
+            name,
+            image,
+            birth_year,
+            nationality,
+            biography,
+            most_famous_movies,
+            awards,
+          } = actress;
+          return(
+        <div className="col-12"  key={id}>
           <div className="card">
-            <div className="card-header text-center fw-bold fs-4">Nome</div>
-            <img src="" alt="attrici" />
+            <div className="card-header text-center fw-bold fs-4">{name}</div>
+            <img src={image} alt=""/>
             <div className="card-body text-center">
-              <p>1099 &nbsp; americano</p>
-              <p className="card-text">Meryl Streep is considered one of the greatest actresses of her generation and has received numerous accolades for her versatile performances.</p>
+              <p>{birth_year} &nbsp; {nationality}</p>
+              <p className="card-text">{biography}</p>
               <p>
                 <span className="fw-bold text-danger">most_famous_movies</span><br />
-                <span className="text-danger">"The African Queen","Bringing Up Baby","On Golden Pond"</span>
+                <span className="text-danger">{most_famous_movies}</span>
               </p>
               <p>
                 <span className="fw-bold text-warning">awards</span><br />
-                <span className="text-warning">4 Academy Awards, 8 Golden Globe Awards</span>
+                <span className="text-warning">{awards}</span>
               </p>
             </div>
           </div>
         </div>
+          )
+        })}
       </div>
     </div>
     </>
