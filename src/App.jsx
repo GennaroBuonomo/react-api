@@ -34,10 +34,10 @@ function App() {
           } = actress;
           return(
         <div className="col-12"  key={id}>
-          <div className="card text-white bg-dark m-3 actor-card">
+          <div className="card text-white bg-dark m-3 actor-card card-container">
             <div className="card-header text-center fw-bold fs-4">{name}</div>
             <img src={image} className="card-img-top actor-img" alt={name.image}/>
-            <div className="card-body text-center">
+            <div className="card-body fst-italic text-center">
               <p>{birth_year} &nbsp; {nationality}</p>
               <p className="card-text">{biography}</p>
               <p>
