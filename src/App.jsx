@@ -7,6 +7,11 @@ function App() {
         <div className="col-12 mb-5">
           <h1 className="d-block mx-auto text-center"><strong>Actresses</strong></h1>
         </div>
+        <div className="col-12">
+          <div className="card text-white">
+            <div className="card-header">Nome</div>
+          </div>
+        </div>
       </div>
     </div>
     </>
