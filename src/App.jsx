@@ -17,7 +17,7 @@ function App() {
   return (
     <>
     <div className="container">
-      <div className="row justify-content-center">
+      <div className="row justify-content-center gap-3">
         <div className="col-12 mb-5">
           <h1 className="d-block mx-auto text-center"><strong>Attrici</strong></h1>
         </div>
@@ -33,8 +33,8 @@ function App() {
             awards,
           } = actress;
           return(
-        <div className="col-12"  key={id}>
-          <div className="card text-white bg-dark m-3 actor-card card-container">
+        <div className="col-12 col-sm-6 col-md-4 col-lg-3"  key={id}>
+          <div className="card text-white bg-dark m-3 actor-card h-100">
             <div className="card-header text-center fw-bold fs-4">{name}</div>
             <img src={image} className="card-img-top actor-img" alt={name.image}/>
             <div className="card-body fst-italic text-center">
