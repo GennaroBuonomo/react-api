@@ -19,7 +19,7 @@ function App() {
     <div className="container">
       <div className="row justify-content-center gap-3">
         <div className="col-12 mb-5">
-          <h1 className="d-block mx-auto text-center"><strong>Attrici</strong></h1>
+          <h1 className="d-block mx-auto text-center text-white bg-dark"><strong>Attrici</strong></h1>
         </div>
         {actresses.map((actress) => {
            const {
