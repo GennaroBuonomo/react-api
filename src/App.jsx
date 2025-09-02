@@ -9,7 +9,7 @@ function App() {
         </div>
         <div className="col-12">
           <div className="card">
-            <div className="card-header">Nome</div>
+            <div className="card-header text-center fw-bold fs-4">Nome</div>
             <img src="" alt="attrici" />
             <div className="card-body text-center">
               <p>1099 &nbsp; americano</p>
@@ -17,6 +17,10 @@ function App() {
               <p>
                 <span className="fw-bold text-danger">most_famous_movies</span><br />
                 <span className="text-danger">"The African Queen","Bringing Up Baby","On Golden Pond"</span>
+              </p>
+              <p>
+                <span className="fw-bold text-warning">awards</span><br />
+                <span className="text-warning">4 Academy Awards, 8 Golden Globe Awards</span>
               </p>
             </div>
           </div>
